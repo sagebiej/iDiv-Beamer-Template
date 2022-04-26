@@ -1,0 +1,70 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{Ressources/idiv}
+\makeatletter
+\makeatother
+
+
+\title[iDiv Template]{iDiv Beamer Template}
+\author{Author}
+\date{\today}
+\institute{{\includegraphics[height=2cm,width=7cm]{Ressources/iDiv_Logo_long.png} } \vspace{1cm}}
+
+
+\begin{document}
+\begin{frame}
+\maketitle
+
+\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(0.8\textwidth,-0.85cm)
+\includegraphics[height=0.75cm,width=2.25cm]{Ressources/iDiv_Logo_short.png}
+\end{textblock*}}
+
+\begin{frame}{Content}
+\tableofcontents
+
+\end{frame}
+\section{Section 1}
+\begin{frame}{Frame 1}
+\begin{itemize}
+    \item This is how items look like \pause
+    \begin{itemize}
+        \item This is how subitems look like
+         \begin{itemize}
+        \item This is how subsubitems look like
+    \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\item This is how enumerate item look like
+\begin{enumerate}
+\item This is how enumerate subitem look like
+\begin{enumerate}
+\item This is how enumerate subsubitem look like
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{frame}
+\section{Section 2}   
+\begin{frame}{Frame 2}
+\begin{block}{Block 1}
+This is how a block look like.
+\end{block}
+    
+\end{frame}
+\begin{frame}{Frame 3}
+    This frame is an example of \texttt{thebibliography} environment using 
+in bibliography management. Two items are cited: \textit{The \LaTeX\ Companion} 
+book by \cite{gossens.1993} and the Einstein journal paper \citep{einstein.1905}. 
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \bibliography{lit.bib}
+\end{frame}
+\end{document}
+
